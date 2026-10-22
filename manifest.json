@@ -1,0 +1,16 @@
+{
+  "name": "Anipocket",
+  "short_name": "Anipocket",
+  "description": "Premium Anime Streaming Experience",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAF8FC",
+  "theme_color": "#8464A5",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,27 +1,1314 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    
-    <!-- iOS PWA Meta Tags -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="Anipocket" />
-    <link rel="apple-touch-icon" href="/icon.png" />
-    <link rel="icon" type="image/png" href="/icon.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#FFFFFF" />
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0PRTSMJ3V1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+	dataLayer.push(arguments);
+	}
+	gtag("js", new Date());
 
-    <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <title>Anipocket — Shiunji & iOS Liquid Glass Demo</title>
-  </head>
-  <body class="bg-[#FAF8FC] text-[#1A1311] select-none overflow-x-hidden antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+	gtag("config", "G-0PRTSMJ3V1");
+</script>
+<meta charset="utf-8" />
+<title>ANIPOCKET — Anime Streaming</title>
+<meta name="description" content="この兄弟姉妹には、秘密があるーー。TVアニメ「紫雲寺家の子供たち」2025.4.8 ONAIR！" />
+<meta name="keywords" content="紫雲寺家の子供たち,宮島礼吏,雪野れいじ,ヤングアニマル,白泉社,動画工房,The Children of Shiunji Family" />
+<meta property="og:site_name" content="TVアニメ「紫雲寺家の子供たち」公式サイト" />
+<meta property="og:title" content="TVアニメ「紫雲寺家の子供たち」公式サイト" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="この兄弟姉妹には、秘密があるーー。TVアニメ「紫雲寺家の子供たち」2025.4.8 ONAIR！" />
+<meta property="og:url" content="https://shiunjifamily.com/" />
+<meta property="og:image" content="https://shiunjifamily.com/assets/og/ogp3.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@shiunji_anime" />
+<meta name="twitter:creator" content="@shiunji_anime" />
+<meta name="twitter:title" content="TVアニメ「紫雲寺家の子供たち」公式サイト" />
+<meta name="twitter:description" content="この兄弟姉妹には、秘密があるーー。TVアニメ「紫雲寺家の子供たち」2025.4.8 ONAIR！" />
+<meta name="twitter:image" content="https://shiunjifamily.com/assets/og/ogp3.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="theme-color" content="#FFF" />
+<script type="application/ld+json">
+	{
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"@id": "https://shiunjifamily.com/#website",
+	"name": "TVアニメ「紫雲寺家の子供たち」公式サイト",
+	"description": "この兄弟姉妹には、秘密があるーー。TVアニメ「紫雲寺家の子供たち」2025.4.8 ONAIR！",
+	"alternateName": ["紫雲寺家の子供たち", "TVアニメ「紫雲寺家の子供たち」"],
+	"url": "https://shiunjifamily.com/"
+	}
+</script>
+<!-- BEGIN >> googleFonts || NotoSerif / CormorantGaramond[400,500,700] / CormorantInfant[500] / ZenOldMincho[400,500]  -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Cormorant+Infant:wght@500&family=Noto+Serif+JP:wght@400..900&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet" />
+<!-- END >> googleFonts -->
+<link href="./assets/css/libs/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+<link href="./assets/css/common.css" rel="stylesheet" type="text/css" />
+<link href="./assets/css/top.css" rel="stylesheet" type="text/css" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Anipocket" />
+<link rel="apple-touch-icon" href="./icon.png" />
+<link rel="manifest" href="./manifest.json" />
+<link href="./assets/css/anipocket.css" rel="stylesheet" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+	window.jQuery || document.write('<script src="./assets/js/libs/jquery-3.7.1.min.js"><\/script>');
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>
+	window.jQuery.easing.def || document.write('<script src="./assets/js/libs/jquery.easing.min.js"><\/script>');
+</script>
+<link rel="shortcut icon" href="./favicon.ico" />
+</head>
+<body id="top" data-root="./" data-page="top" data-color="1" data-navcolor="1" data-cload="arata" style="overflow: hidden">
+<!-- BEGIN #fullWrap -->
+<div id="tLoading">
+	<div class="tLoading__bg"></div>
+	<div class="tLoadingIn">
+		<div class="tLoading__circleWrap">
+			<div class="tLoading__circleInWrap js-tLoading__circle"></div>
+		</div>
+		<div class="tLoading__catchTextWrap">
+			<div class="tLoading__catchTextSet">
+				<p class="tLoading__catchText -a">
+					<picture>
+						<source srcset="./assets/img/top/catch_a2.webp" type="image/webp">
+						<img src="./assets/img/top/catch_a2.png" alt="家族を超えた、">
+					</picture>
+				</p>
+				<p class="tLoading__catchText -b">
+					<picture>
+						<source srcset="./assets/img/top/catch_b2.webp" type="image/webp">
+						<img src="./assets/img/top/catch_b2.png" alt="恋がはじまる">
+					</picture>
+				</p>
+			</div>
+		</div>
+		<div class="tLoading__logoWrap">
+			<p class="tLoading__logo">
+				<img src="./assets/img/common/logo.svg" alt="紫雲寺家の子供たち">
+			</p>
+		</div>
+	</div>
+	<div class="Loading__bgCont">
+		<div class="Loading__bg -a"></div>
+		<div class="Loading__bg -b"></div>
+		<div class="Loading__bg -c"></div> 
+	</div>
+</div><!-- /#tLoading -->
+<div class="cLoading"><span></span></div>
+<div id="fullWrap">
+<div id="fullWrapIn">
+	<div id="visualArea">
+		<div class="visualArea_contArea">
+			<div class="visualArea_contAreaIn">
+				<div class="visualArea_contAreaIn__cont">
+					<div class="visualArea_logo">
+						<h1 class="visualArea_logo-title">
+							<img src="./assets/img/common/logo.svg" alt="紫雲寺家の子供たち" />
+						</h1>
+						<p class="visualArea_logo-onairDate">
+							<img src="./assets/img/top/onair_date.svg" alt="2025.4 ON AIR" />
+						</p>             
+
+					</div>
+					<div class="p-visualArea_navListsWrap">
+						<ul class="visualArea_navLists js-navLists">
+							<li class="navList">
+								<a href="#top" class="navList__link js-anchor">
+								<span class="navList__link-en">TOP</span>
+								<span class="navList__link-ja">トップ</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="./news/" class="navList__link">
+								<span class="navList__link-en">NEWS</span>
+								<span class="navList__link-ja">ニュース</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="./onair/" class="navList__link">
+									<span class="navList__link-en">ONAIR</span>
+									<span class="navList__link-ja">放送・配信情報</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="#introduction" class="navList__link js-anchor">
+								<span class="navList__link-en">INTRODUCTION</span>
+								<span class="navList__link-ja">イントロダクション</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="./story/" class="navList__link">
+								<span class="navList__link-en">STORY</span>
+								<span class="navList__link-ja">物語</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="#staffcast" class="navList__link js-anchor">
+								<span class="navList__link-en">STAFF&CAST</span>
+								<span class="navList__link-ja">スタッフ＆キャスト</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="./character/" class="navList__link">
+								<span class="navList__link-en">CHARACTER</span>
+								<span class="navList__link-ja">キャラクター</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="./movie/" class="navList__link">
+								<span class="navList__link-en">MOVIE</span>
+								<span class="navList__link-ja">映像</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="./music/" class="navList__link">
+									<span class="navList__link-en">MUSIC</span>
+									<span class="navList__link-ja">音楽情報</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="./goods/" class="navList__link">
+									<span class="navList__link-en">GOODS</span>
+									<span class="navList__link-ja">商品</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="#book" class="navList__link js-anchor">
+								<span class="navList__link-en">BOOK</span>
+								<span class="navList__link-ja">原作</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="./bddvd/" class="navList__link">
+								<span class="navList__link-en">Blu-ray&amp;DVD</span>
+								<span class="navList__link-ja">ブルーレイ&amp;DVD</span>
+								</a>
+							</li>
+							<li class="navList">
+								<a href="./special/" class="navList__link js-anchor">
+								<span class="navList__link-en">SPECIAL</span>
+								<span class="navList__link-ja">原作</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="visualArea_movWrap">
+						<div class="visualArea_movIn">
+							<span class="visualArea_mov-acc -layer1"></span>
+							<div class="visualArea_movIn__cont">
+								<button class="btn_visualMovie js-ytThumb" onclick="movie('4XVwQr0t_zU');" data-ytid="4XVwQr0t_zU">
+									<span class="btn_movie-imgWrap">
+										<span class="visualArea_mov-acc -layer2"></span>
+										<span class="btn_movie-img"></span>
+									</span>
+									<i class="btn_visualMovie-iconPlay"></i>
+									<span class="hd">PLAY</span>
+								</button>
+								<div class="moviebg js-ythumb">
+									<div id="js-yt-autoplay" class="bg_ytplayer"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="visualArea_RightsideTxt">
+					<img src="./assets/img/top/visualArea_sideTxt-r.svg" alt="The children of Shiunji family" />
+				</p>
+			</div><!-- /.visualArea_contAreaIn -->
+		</div><!-- /.visualArea_contArea -->
+
+		<!-- ==========  visual ========== -->
+		<div class="visualArea_imageArea" id="visualAreaImage" data-selectvisual="1">
+			<div class="visualArea_image">
+				<div class="visualArea_imageset" data-visual="0">
+					<div class="visualArea_image-layerGroup -v0_bg">
+						<div class="visualArea_image-layer">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-bg-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-bg-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-bg.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual1_layer-bg.jpg" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+						<div class="visualArea_image-layer -v0_bg-acc">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-accbg-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-accbg-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-accbg.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual/visual1_layer-accbg.png" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+					</div><!-- /.visual0_bgGroup -->
+					<div class="visualArea_image-layerGroup -v0_o">
+						<div class="visualArea_image-layer -v0_o-img">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-o-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-o-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-o.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual1_layer-o.png" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+					</div><!-- /.visual0_originalGroup -->
+					<div class="visualArea_image-layerGroup -v0_c">
+						<div class="visualArea_image-layer -v0_c-7g">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-c_7g-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_7g-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_7g.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual1_layer-c_7g.png" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+						<div class="visualArea_image-layer -v0_c-6c">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-c_6c-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_6c-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_6c.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual1_layer-c_6c.png" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+						<div class="visualArea_image-layer -v0_c-5f">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-c_5f-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_5f-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_5f.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual1_layer-c_5f.png" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+						<div class="visualArea_image-layer -v0_c-4b">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-c_4b-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_4b-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_4b.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual1_layer-c_4b.png" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+						<div class="visualArea_image-layer -v0_c-3a">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-c_3a-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_3a-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_3a.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual1_layer-c_3a.png" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+						<div class="visualArea_image-layer -v0_c-2d">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-c_2d-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_2d-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_2d.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual1_layer-c_2d.png" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+						<div class="visualArea_image-layer -v0_c-1e">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual1_layer-c_1e-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_1e-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual1_layer-c_1e.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual1_layer-c_1e.png" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+					</div><!-- /.visual0_colorGroup -->
+				</div><!-- /.visualArea_imageset[data-visual="0"] -->
+
+				<div class="visualArea_imageset" data-visual="1">
+					<div class="visualArea_image-layerGroup">
+						<div class="visualArea_image-layer -v1_layer0">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual2-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual2-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual2.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual2.jpg" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+					</div>
+				</div><!-- /.visualArea_imageset[data-visual="1"] -->
+
+				<div class="visualArea_imageset" data-visual="2">
+					<div class="visualArea_image-layerGroup">
+						<div class="visualArea_image-layer -v1_layer0">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual3-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual3-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual3.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual3.jpg" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+					</div>
+				</div><!-- /.visualArea_imageset[data-visual="2"] -->
+
+				<div class="visualArea_imageset" data-visual="3">
+					<div class="visualArea_image-layerGroup">
+						<div class="visualArea_image-layer -v1_layer0">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual4-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual4-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual4.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual4.jpg" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+					</div>
+				</div><!-- /.visualArea_imageset[data-visual="3"] -->
+
+				<div class="visualArea_imageset" data-visual="4">
+					<div class="visualArea_image-layerGroup">
+						<div class="visualArea_image-layer -v1_layer0">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual5-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual5-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual5.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual5.jpg" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+					</div>
+				</div><!-- /.visualArea_imageset[data-visual="4"] -->
+
+				<div class="visualArea_imageset" data-visual="5">
+					<div class="visualArea_image-layerGroup">
+						<div class="visualArea_image-layer -v1_layer0">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual6-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual6-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual6.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual6.jpg" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+					</div>
+				</div><!-- /.visualArea_imageset[data-visual="5"] -->
+
+				<div class="visualArea_imageset" data-visual="6">
+					<div class="visualArea_image-layerGroup">
+						<div class="visualArea_image-layer -v1_layer0">
+							<picture>
+								<source srcset="./assets/img/top/visual/visual7-s.webp" media="screen and (max-width:767px)" type="image/webp">
+								<source srcset="./assets/img/top/visual/visual7-s.jpg" media="screen and (max-width:767px)">
+								<source srcset="./assets/img/top/visual/visual7.webp" type="image/webp">
+								<img src="./assets/img/top/visual/visual7.jpg" alt="ビジュアル" class="-ndlimg" onmousedown="return false" oncopy="return false" onselectstart="return false" oncontextmenu="return false">
+							</picture>
+						</div>
+					</div>
+				</div><!-- /.visualArea_imageset[data-visual="6"] -->
+
+			</div><!-- /.visualArea_image -->
+
+			<!-- ==========  visual thumb ========== -->
+			<div class="visualArea_selects">
+				<ul class="visualArea_selectLists">					
+					<li class="visualArea_selectList">
+						<button class="btn_visualChange" onclick="visualChange('1');" data-select="1">
+							<span class="btn_visualChangeIn">
+								<span class="btn_visualChange--img"><img src="./assets/img/top/visual/thumb_visual1.png" alt=""></span>
+								<span class="btn_visualChange--bg"></span>
+							</span>
+						</button>
+					</li>
+					<li class="visualArea_selectList">
+						<button class="btn_visualChange" onclick="visualChange('0');" data-select="0">
+							<span class="btn_visualChangeIn">
+								<span class="btn_visualChange--img"><img src="./assets/img/top/visual/thumb_visual0.png" alt=""></span>
+								<span class="btn_visualChange--bg"></span>
+							</span>
+						</button>
+					</li>
+					<li class="visualArea_selectList">
+						<button class="btn_visualChange" onclick="visualChange('2');" data-select="2">
+							<span class="btn_visualChangeIn">
+								<span class="btn_visualChange--img"><img src="./assets/img/top/visual/thumb_visual2.png" alt=""></span>
+								<span class="btn_visualChange--bg"></span>
+							</span>
+						</button>
+					</li>
+					<li class="visualArea_selectList">
+						<button class="btn_visualChange" onclick="visualChange('3');" data-select="3">
+							<span class="btn_visualChangeIn">
+								<span class="btn_visualChange--img"><img src="./assets/img/top/visual/thumb_visual3.png" alt=""></span>
+								<span class="btn_visualChange--bg"></span>
+							</span>
+						</button>
+					</li>
+					<li class="visualArea_selectList">
+						<button class="btn_visualChange" onclick="visualChange('4');" data-select="4">
+							<span class="btn_visualChangeIn">
+								<span class="btn_visualChange--img"><img src="./assets/img/top/visual/thumb_visual4.png" alt=""></span>
+								<span class="btn_visualChange--bg"></span>
+							</span>
+						</button>
+					</li>
+					<li class="visualArea_selectList">
+						<button class="btn_visualChange" onclick="visualChange('5');" data-select="5">
+							<span class="btn_visualChangeIn">
+								<span class="btn_visualChange--img"><img src="./assets/img/top/visual/thumb_visual5.png" alt=""></span>
+								<span class="btn_visualChange--bg"></span>
+							</span>
+						</button>
+					</li>
+					<li class="visualArea_selectList">
+						<button class="btn_visualChange" onclick="visualChange('6');" data-select="6">
+							<span class="btn_visualChangeIn">
+								<span class="btn_visualChange--img"><img src="./assets/img/top/visual/thumb_visual6.png" alt=""></span>
+								<span class="btn_visualChange--bg"></span>
+							</span>
+						</button>
+					</li>
+				</ul>
+			</div><!-- /.visualArea_selects -->
+		</div>
+		<!-- /.visualArea_imageArea -->
+		<div class="visualArea_bgArea">
+			<div class="visualArea_bgAreaIn">
+				<div class="visualArea_frameArea">
+				<div class="visualArea_frame -t">
+					<span class="visualArea_frame-line -l"></span>
+					<span class="visualArea_frame-line__txt">The children of Shiunji family</span>
+					<span class="visualArea_frame-line -r"></span>
+				</div>
+				<div class="visualArea_frame -r">
+					<span class="visualArea_frame-line"></span>
+				</div>
+				<div class="visualArea_frame -b">
+					<span class="visualArea_frame-line"></span>
+				</div>
+				<div class="visualArea_frame -l">
+					<span class="visualArea_frame-line -t"></span>
+					<span class="visualArea_frame-line__txt">Contents</span>
+					<span class="visualArea_frame-line -b"></span>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.visualArea_bgArea -->
+		<div class="visualArea_bgArea -bg_circle">
+			<div class="visualArea_bgAreaIn">
+				<div class="visualArea_circle"></div>
+			</div>
+		</div>
+	</div>
+	<div class="fullContents">
+		<header class="header js-header">
+			<div class="headerCont">
+				<p class="headerLogo">
+					<span class="headerLogoIn"><img src="./assets/img/common/logo.svg" alt="紫雲寺家の子供たち" /></span>
+				</p>
+				<div class="headerContIn">
+					<div class="header__inner header__navWrap" data-lenis-prevent>
+						<div class="header__innerContent">
+							<nav class="headerNav">
+								<ul class="headerNavLists">
+									<li class="navList">
+										<a href="#top" class="navList__link js-anchor js-navlink is-active" data-nav="#visualArea">
+											<span class="navList__link-en">TOP</span>
+											<span class="navList__link-ja">トップ</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="./news/" class="navList__link js-navlink" data-nav="#news">
+											<span class="navList__link-en">NEWS</span>
+											<span class="navList__link-ja">ニュース</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="./onair/" class="navList__link">
+											<span class="navList__link-en">ONAIR</span>
+											<span class="navList__link-ja">放送・配信情報</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="#introduction" class="navList__link js-anchor js-navlink" data-nav="#introduction">
+											<span class="navList__link-en">INTRODUCTION</span>
+											<span class="navList__link-ja">イントロダクション</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="#staffcast" class="navList__link js-anchor js-navlink" data-nav="#staffcast">
+											<span class="navList__link-en">STAFF&CAST</span>
+											<span class="navList__link-ja">スタッフ＆キャスト</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="./character/" class="navList__link">
+											<span class="navList__link-en">CHARACTER</span>
+											<span class="navList__link-ja">キャラクター</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="./movie/" class="navList__link">
+											<span class="navList__link-en">MOVIE</span>
+											<span class="navList__link-ja">映像</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="./music/" class="navList__link">
+											<span class="navList__link-en">MUSIC</span>
+											<span class="navList__link-ja">音楽情報</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="./goods/" class="navList__link">
+											<span class="navList__link-en">GOODS</span>
+											<span class="navList__link-ja">商品</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="#book" class="navList__link js-anchor js-navlink" data-nav="#book">
+											<span class="navList__link-en">BOOK</span>
+											<span class="navList__link-ja">原作</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="./bddvd/" class="navList__link">
+										<span class="navList__link-en">Blu-ray&amp;DVD</span>
+										<span class="navList__link-ja">ブルーレイ&amp;DVD</span>
+										</a>
+									</li>
+									<li class="navList">
+										<a href="./special/" class="navList__link">
+											<span class="navList__link-en">SPECIAL</span>
+											<span class="navList__link-ja">スペシャル</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="headerSns">
+								<dl class="header_shareLists shareLists">
+									<dt class="shareLists__title">Share</dt>
+									<dd class="shareLists__item is-twitter">
+										<a href="https://twitter.com/intent/tweet?url=https://shiunjifamily.com&text=TVアニメ「紫雲寺家の子供たち」公式サイト&hashtags=紫雲寺家の子供たち,shiunjifamily" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="shareLists__link"><span class="hd">Twitter share</span></a>
+									</dd>
+									<dd class="shareLists__item is-facebook">
+										<a href="https://www.facebook.com/share.php?u=https://shiunjifamily.com" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="shareLists__link"><span class="hd">Facebook share</span></a>
+									</dd>
+									<dd class="shareLists__item is-line">
+										<a href="https://line.me/R/msg/text/?TVアニメ「紫雲寺家の子供たち」公式サイト https://shiunjifamily.com" onclick="window.open(encodeURI(decodeURI(this.href)), 'linewindow', 'width=550, height=520,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" target="_blank" class="shareLists__link"><span class="hd">LINE share</span></a>
+									</dd>
+								</dl>
+								<dl class="header_snsLists snsLists">
+									<dt class="snsLists__title">Official</dt>
+									<dd class="snsLists__srv is-twitter">
+										<a href="https://x.com/shiunji_anime" class="snsLists__srvLink">
+										<span class="hd">X</span>
+										</a>
+									</dd>
+									<dd class="snsLists__srv is-tiktok">
+										<a href="https://www.tiktok.com/@shiunji_anime" class="snsLists__srvLink">
+										<span class="hd">TikTok</span>
+										</a>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<!-- /.header__inner -->
+					<div class="header__inner header__bgWrap">
+						<div class="header__bg-side -l">
+							<span class="header__bg-sideColor -a"></span>
+							<span class="header__bg-sideColor -b"></span>
+							<span class="header__bg-sideColor -c"></span>
+							<span class="header__bg-sideColor -d"></span>
+							<span class="header__bg-sideColor -e"></span>
+						</div>
+						<div class="header__bg-side -r"></div>
+					</div>
+				</div>
+				<!-- /.headerContIn -->
+				<div class="header__navBtnWrap">
+					<a href="javascript:;" class="header__navBtn js-menu">
+						<span class="hd">MENU</span>
+						<div class="header__navBtn__lineWrap">
+							<span class="header__navBtn--line"></span>
+							<span class="header__navBtn--line"></span>
+						</div>
+						<span class="header__navBtn-icon"></span>
+					</a>
+				</div>
+				<!-- /.header__navBtn -->
+			</div>
+			<!-- /.headerCont -->
+		</header><!-- /.header -->
+
+		<main class="main">
+			<div class="thead_Banner content">
+				<div class="thead_BannerCont contentIn">
+					<div class="thead_BannerSwiper js-thead_BannerSwiper swiper">
+						<ul id="thead_BannerLists" class="swiper-wrapper thead_BannerLists">
+							<li class="swiper-slide thead_BannerList">
+								<a href="./news/?id=20250402_01" class="thead_Banner-link">
+									<img src="./assets/img/common/banner/bnr_shiunjikinenpark.jpg" alt="紫雲寺記念公園コラボ">
+								</a>
+							</li>
+							<li class="swiper-slide thead_BannerList">
+								<a href="./special/odakyu/" class="thead_Banner-link">
+									<img src="./assets/img/common/banner/bnr_odakyu.jpg" alt="小田急電鉄コラボ第2弾">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.thead_BannerSwiper -->
+					<div class="js-thead_BannerLists-pagination"></div>
+				</div><!-- /.thead_BannerCont -->
+			</div><!-- /.thead_Banner -->
+
+			<section id="news" class="content js-scrani">
+				<div class="newsConts contentIn">
+					<div class="newsCont -news">
+						<h2 class="cont_h2">
+							<span class="cont_h2-en">
+								<span class="cont_h2-en__img"><img src="./assets/img/common/title/ttl_news.svg" alt="NEWS" /></span>
+							</span>
+							<span class="cont_h2-ja"><span>ニュース</span></span>
+						</h2>
+						<div class="contentIn__cont">
+						<ul class="newsLists" id="js-topnewsLists"></ul>
+							<div class="link_newsMore">
+								<a href="./news/" class="comlink -arrow_r">
+								<span class="comlink_txt -en"><span>MORE</span></span>
+								<span class="comlink_arrow">
+									<span class="comlink_arrow-circle"></span>
+								</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- /.newsCont-news -->
+					<div class="newsCont -sns">
+						<div class="twitterWidgetWrap">
+							<div class="twitterWidgetInWrap">
+								<div class="twitterWidgetFrame">
+									<div class="twitterWidgetFrameIn">
+										<div class="twitterWidget" data-lenis-prevent>
+											<iframe src="./_inc/page/twitter/widgets.twitter.html" loading="lazy"></iframe>
+										</div>
+									</div>
+								</div>
+								<div class="twitterWidget__acc">
+									<p class="slide_officialx"><span class="hd">OFFICIAL X</span></p>
+								</div>
+								<div class="twitterWidgetAccount">
+									<a href="https://x.com/shiunji_anime" target="_blank" class="twitterWidgetAccount_link" title="Xで確認する">
+										<div class="twitterWidgetAccount_linkIcon">
+										<span class="twitterWidgetAccount_linkIcon-bg"></span>
+										<span class="twitterWidgetAccount_linkIcon-icon"><span class="hd">OFFICIAL X</span></span>
+										</div>
+										<p class="twitterWidgetAccount_txt">
+										<span class="twitterWidgetAccount_txt-line"></span>
+										<span class="twitterWidgetAccount_txt-txt">Follow us</span>
+										</p>
+									</a>
+								</div>
+							</div>
+						</div><!-- /.twitterWidgetWrap -->
+						<div class="sns_ttlinkWrap">
+							<a href="https://www.tiktok.com/@shiunji_anime" target="_blank" class="sns_ttlink" title="Ofiicial TikTok">
+								<span class="sns_ttlink-txt">Official TikTok</span>
+							</a>
+						</div>
+					</div>
+					<!-- /.newsCont-sns -->
+				</div>
+				<!-- /.newsConts -->
+			</section><!-- /#news -->
+
+			<div id="introstory" class="introstory content js-scrani">
+				<div class="introstory_cont">
+					<section id="introduction" class="introstoryContent js-scrani">
+						<div id="introductionCont" class="introstoryContentIn contentIn">
+							<h2 class="cont_h2">
+								<span class="cont_h2-en">
+								<span class="cont_h2-en__img"><img src="./assets/img/common/title/ttl_introduction.svg" alt="INTRODUCTION" /></span>
+								</span>
+								<span class="cont_h2-ja"><span>イントロダクション</span></span>
+							</h2>
+							<div class="contentIn__cont">
+								<p class="introstoryText js-scrani -delay1">
+									東京都世田谷区の高級住宅街に<br class="sp" />豪邸を構える「紫雲寺家」。<br />
+									ここに住む7人の<ruby>兄弟姉妹<rt>きょうだい</rt></ruby
+									>は、<br class="sp" />才色兼備として知られ、<br class="pc" />なかでも年子の5姉妹は全員が美少女だと評判だった。<br />
+									<br />
+									誰もが羨む美人姉妹との一つ屋根の下。<br />
+									しかし、長男・新は個性的な5姉妹に振り回され、姉妹以外の女子には及び腰になっていた。<br />
+									家族を大切に思いながらも、5姉妹のいない<br class="sp" />別の人生を妄想する新だが……。
+								</p>
+								<p class="introstoryText_hot -center js-scrani -delay2">
+									「実は君達は本当の<ruby>兄弟姉妹<rt>きょうだい</rt></ruby
+									>ではない」
+								</p>
+								<p class="introstoryText js-scrani -delay3">
+									ある日、父親から衝撃の事実を告げられ、<br class="sp" />運命は一変する！<br />
+									いつまでも変わらないと信じた家族の繋がりも、変化の兆しを見せはじめ――。<br />
+									<br />
+									この愛が行き着く先は、<br class="sp" />家族、<ruby>兄弟姉妹<rt>きょうだい</rt></ruby
+									>、それとも？<br />
+									運命が繋ぐワケあり家族の<br class="sp" />“禁断×純愛”ラブコメディが開幕！
+								</p>
+							</div>
+						</div>
+					</section>
+					<section id="story" class="introstoryContent" style="display: none">
+						<div class="introstoryContentIn contentIn">
+							<h2 class="cont_h2">
+								<span class="cont_h2-en">
+								<span class="cont_h2-en__img"><img src="./assets/img/common/title/ttl_introduction.svg" alt="INTRODUCTION" /></span>
+								</span>
+								<span class="cont_h2-ja"><span>ストーリー</span></span>
+							</h2>
+							<div class="contentIn__cont">
+								<p class="introstoryText_hot -head">累計1000万部突破「彼女、お借りします」作者・宮島礼吏の最新作!!</p>
+								<p class="introstoryText">
+								世田谷の豪邸に住む紫雲寺家の７人兄弟姉妹は、才色兼備で巷でもその名を轟かせている。<br />
+								長男の新は、個性の強い５人の姉妹に振り回されながらも家族を大切にして過ごしてきた。<br />
+								しかし、末の妹の誕生日会で父親から驚きの事実を告げられ、兄弟姉妹の運命は一変する―!?
+								</p>
+								<p class="introstoryText_hot -foot">家族の愛と男女の恋が入り混じる、禁断のラブコメ第１巻!!</p>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="introstory_bg">
+					<div class="introstory_bgIn">
+						<div class="introstory_bg-imageWrap">
+						<div class="introstory_bg-image"></div>
+						</div>
+					</div>
+					<div class="introstory_bg-circleWrap">
+						<div class="introstory_bg-circle"></div>
+					</div>
+				</div>
+			</div>
+
+			<section id="staffcast" class="content js-scrani">
+				<div class="contentIn">
+					<h2 class="cont_h2">
+						<span class="cont_h2-en">
+						<span class="cont_h2-en__img"><img src="./assets/img/common/title/ttl_staffcast.svg" alt="STAFF&CAST" /></span>
+						</span>
+						<span class="cont_h2-ja"><span>スタッフ＆キャスト</span></span>
+					</h2>
+					<div class="staffcastContents">
+						<section id="staff" class="staffcastContent js-scrani">
+							<h3 class="staffcast_h3"><img src="./assets/img/top/staff_h3.svg" alt="STAFF" /></h3>
+							<dl class="staffcastLists">
+								<div class="staffcastList -w100">
+									<dt class="staffcast_job">原作</dt>
+									<dd class="staffcast_name -column">
+										宮島礼吏
+										<span class="staffcast_name__gensaku">
+										「紫雲寺家の子供たち」
+										<button class="btn_scComment" onclick="comment('staff',0,'-gensaku');">
+											<span class="hd">COMMENT</span>
+										</button>
+										</span>
+										<br /><small class="staffcast_name__gensaku_small">（白泉社「ヤングアニマル」連載）</small>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">監督</dt>
+									<dd class="staffcast_name">
+										上坪亮樹
+										<button class="btn_scComment" onclick="comment('staff',1,null);"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">シリーズ構成</dt>
+									<dd class="staffcast_name">
+										木村 暢
+										<button class="btn_scComment" onclick="comment('staff',2,null);"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">キャラクター<br class="pc">デザイン</dt>
+									<dd class="staffcast_name">
+										武藤 幹
+										<button class="btn_scComment" onclick="comment('staff',3,null);"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">サブキャラクター<br class="pc">デザイン</dt>
+									<dd class="staffcast_name">中島千明</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">プロップデザイン</dt>
+									<dd class="staffcast_name">藤原奈津子</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">衣装デザイン</dt>
+									<dd class="staffcast_name -column"><span>松本恵、</span><span>葛原詩乃</span></dd>
+								</div>
+								<div class="staffcastList -w50 -sw100">
+									<dt class="staffcast_job">総作画監督</dt>
+									<dd class="staffcast_name -column"><span>武藤幹、</span><span>髙橋瑞紀、</span><span>松下郁子、</span><span>熊谷勝弘、</span><span>室田雄平</span></dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">メインアニメーター</dt>
+									<dd class="staffcast_name -column"><span>八木佐織、</span><span>中尾和麻</span></dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">美術監督</dt>
+									<dd class="staffcast_name">有本妃査恵</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">美術設定</dt>
+									<dd class="staffcast_name -column"><span>松本浩樹、</span><span>石原良光</span></dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">色彩設計</dt>
+									<dd class="staffcast_name">真壁源太</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">撮影監督</dt>
+									<dd class="staffcast_name">塩野修平</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">編集</dt>
+									<dd class="staffcast_name">小野寺絵美</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">音楽</dt>
+									<dd class="staffcast_name">
+										Akki
+										<button class="btn_scComment" onclick="comment('staff',4,null);"><span class="hd">COMMENT</span></button>
+									</dd>
+									<dd class="staffcast_name">
+										星銀乃丈
+										<button class="btn_scComment" onclick="comment('staff',5,null);"><span class="hd">COMMENT</span></button>
+									</dd>
+									<dd class="staffcast_name">
+										堀江晶太
+										<button class="btn_scComment" onclick="comment('staff',6,null);"><span class="hd">COMMENT</span></button>
+									</dd>
+									<dd class="staffcast_name">
+										<small>Directed by PHYZ</small>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">音楽制作</dt>
+									<dd class="staffcast_name">ランティス</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">音響監督</dt>
+									<dd class="staffcast_name">明田川 仁</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job">音響効果</dt>
+									<dd class="staffcast_name">中野勝博</dd>
+								</div>
+								<div class="staffcastList -w50">
+									<dt class="staffcast_job">音響制作</dt>
+									<dd class="staffcast_name">マジックカプセル</dd>
+								</div>
+								<div class="staffcastList -w50">
+									<dt class="staffcast_job">アニメーション制作</dt>
+									<dd class="staffcast_name">動画工房</dd>
+								</div>
+								<div class="staffcastList -w50 -sw100">
+									<dt class="staffcast_job">製作</dt>
+									<dd class="staffcast_name">「紫雲寺家の子供たち」製作委員会</dd>
+								</div>
+							</dl>
+						</section>
+						<section id="cast" class="staffcastContent js-scrani">
+							<h3 class="staffcast_h3"><img src="./assets/img/top/cast_h3.svg" alt="CAST" /></h3>
+							<dl class="staffcastLists">
+								<div class="staffcastList">
+									<dt class="staffcast_job -colorChara_arata">紫雲寺 新</dt>
+									<dd class="staffcast_name">
+										梅原裕一郎
+										<button class="btn_scComment" onclick="comment('cast',0,'-arata')" data-color="arata"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job -colorChara_banri">紫雲寺 万里</dt>
+									<dd class="staffcast_name">
+										安済知佳
+										<button class="btn_scComment" onclick="comment('cast',1,'-banri')" data-color="banri"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job -colorChara_seiha">紫雲寺 清葉</dt>
+									<dd class="staffcast_name">
+										高野麻里佳
+										<button class="btn_scComment" onclick="comment('cast',2,'-seiha')" data-color="seiha"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job -colorChara_ouka">紫雲寺 謳華</dt>
+									<dd class="staffcast_name">
+										高橋李依
+										<button class="btn_scComment" onclick="comment('cast',3,'-ouka')" data-color="ouka"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job -colorChara_minami">紫雲寺 南</dt>
+									<dd class="staffcast_name -flex">
+										菱川花菜
+										<button class="btn_scComment" onclick="comment('cast',4,'-minami')" data-color="minami"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList -colorChara_kotono">
+									<dt class="staffcast_job">紫雲寺 ことの</dt>
+									<dd class="staffcast_name">
+										市ノ瀬加那
+										<button class="btn_scComment" onclick="comment('cast',5,'-kotono')" data-color="kotono"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job -colorChara_shion">紫雲寺 志苑</dt>
+									<dd class="staffcast_name">
+										小林千晃
+										<button class="btn_scComment" onclick="comment('cast',6,'-shion')" data-color="shion"><span class="hd">COMMENT</span></button>
+									</dd>
+								</div>
+								<div class="staffcastList">
+									<dt class="staffcast_job -colorNormal">紫雲寺 要</dt>
+									<dd class="staffcast_name">
+										てらそままさき
+									</dd>
+								</div>
+							</dl>
+						</section>
+					</div>
+				</div>
+			</section><!-- /#staffcast -->
+
+			<section id="book" class="content js-scrani">
+				<h2 class="cont_h2">
+					<span class="cont_h2-en">
+						<span class="cont_h2-en__line -r">
+						<span class="cont_h2-en__line--frame"></span>
+						</span>
+						<span class="cont_h2-en__img"><img src="./assets/img/common/title/ttl_book.svg" alt="BOOK" /></span>
+						<span class="cont_h2-en__line -l">
+						<span class="cont_h2-en__line--frame"></span>
+						</span>
+					</span>
+					<span class="cont_h2-ja"><span>原作</span></span>
+				</h2>
+				<div class="contentIn">
+					<div class="book_head">
+						<h3 class="book_head-ttl">
+							「紫雲寺家の子供たち」<br />
+							<small>著者：宮島礼吏／作画協力：雪野れいじ</small>
+						</h3>
+						<p class="book_head-txt">
+							「ヤングアニマル」（白泉社）にて連載中<br />
+							①〜⑦巻好評発売中<br>
+						</p>
+					</div>
+					<div class="book_main js-scrani">
+						<div class="book_mainCont">
+							<div class="bookListsSwiper js-bookListsSwiper swiper">
+								<ul id="bookLists" class="bookLists swiper-wrapper">
+									<li class="bookList swiper-slide">
+										<a href="https://www.hakusensha.co.jp/comicslist/63689/" target="_blank" rel="noopener noreferrer" class="bookList_link">
+											<div class="bookList_img"><img src="./assets/img/top/book/book_vol1.jpg" alt="1巻" /></div>
+											<p class="bookList_ttl">第1巻</p>
+										</a>
+									</li>
+									<li class="bookList swiper-slide">
+										<a href="https://www.hakusensha.co.jp/comicslist/67052/" target="_blank" rel="noopener noreferrer" class="bookList_link">
+											<div class="bookList_img"><img src="./assets/img/top/book/book_vol2.jpg" alt="2巻" /></div>
+											<p class="bookList_ttl">第2巻</p>
+										</a>
+									</li>
+									<li class="bookList swiper-slide">
+										<a href="https://www.hakusensha.co.jp/comicslist/69715/" target="_blank" rel="noopener noreferrer" class="bookList_link">
+											<div class="bookList_img"><img src="./assets/img/top/book/book_vol3.jpg" alt="3巻" /></div>
+											<p class="bookList_ttl">第3巻</p>
+										</a>
+									</li>
+									<li class="bookList swiper-slide">
+										<a href="https://www.hakusensha.co.jp/comicslist/71221/" target="_blank" rel="noopener noreferrer" class="bookList_link">
+											<div class="bookList_img"><img src="./assets/img/top/book/book_vol4.jpg" alt="4巻" /></div>
+											<p class="bookList_ttl">第4巻</p>
+										</a>
+									</li>
+									<li class="bookList swiper-slide">
+										<a href="https://www.hakusensha.co.jp/comicslist/72299/" target="_blank" rel="noopener noreferrer" class="bookList_link">
+											<div class="bookList_img"><img src="./assets/img/top/book/book_vol5.jpg" alt="5巻" /></div>
+											<p class="bookList_ttl">第5巻</p>
+										</a>
+									</li>
+									<li class="bookList swiper-slide">
+										<a href="https://www.hakusensha.co.jp/comicslist/74082/" target="_blank" rel="noopener noreferrer" class="bookList_link">
+											<div class="bookList_img"><img src="./assets/img/top/book/book_vol6.jpg" alt="6巻" /></div>
+											<p class="bookList_ttl">第6巻</p>
+										</a>
+									</li>
+									<li class="bookList swiper-slide">
+										<a href="https://www.hakusensha.co.jp/comicslist/74796/" target="_blank" rel="noopener noreferrer" class="bookList_link">
+											<div class="bookList_img"><img src="./assets/img/top/book/book_vol7.jpg" alt="7巻" /></div>
+											<p class="bookList_ttl">第7巻</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="contSwiper_scrlbarWrap">
+								<div class="contSwiper_scrlbar js-contSwiper_scrlbar"></div>
+							</div><!-- ./contSwiper_scrlbarWrap -->
+						</div>
+						<div class="book_mainBg">
+							<div class="book_mainBg-in">
+								<p class="book_h3"><img src="./assets/img/top/book_h3.svg" alt="BOOk" /></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><!-- /#book -->
+		</main>
+	</div>
+	<div class="combg">
+		<div class="combgIn">
+			<div class="bgCircle -a">
+				<span class="bgCircleGradient -a"></span>
+				<span class="bgCircleGradient -b"></span>
+				<span class="bgCircleGradient -c"></span>
+				<span class="bgCircleGradient -d"></span>
+				<span class="bgCircleGradient -e"></span>
+				<span class="bgCircleGradient -f"></span>
+			</div>
+			<div class="bgCircle -b">
+				<span class="bgCircleColor -a"></span>
+				<span class="bgCircleColor -b"></span>
+				<span class="bgCircleColor -c"></span>
+				<span class="bgCircleColor -d"></span>
+				<span class="bgCircleColor -e"></span>
+				<span class="bgCircleColor -f"></span>
+			</div>
+			<div class="bgCircle -c">
+				<span class="bgCircleGradient -a"></span>
+				<span class="bgCircleGradient -b"></span>
+				<span class="bgCircleGradient -c"></span>
+				<span class="bgCircleGradient -d"></span>
+				<span class="bgCircleGradient -e"></span>
+				<span class="bgCircleGradient -f"></span>
+			</div>
+			<div class="bgSet -a">
+				<div class="bgCircle -d">
+				<span class="bgCircleGradient -a"></span>
+				<span class="bgCircleGradient -b"></span>
+				<span class="bgCircleGradient -c"></span>
+				<span class="bgCircleGradient -d"></span>
+				<span class="bgCircleGradient -e"></span>
+				<span class="bgCircleGradient -f"></span>
+				</div>
+				<div class="bgLine -a"></div>
+			</div>
+			<div class="bgCircle -e">
+				<span class="bgCircleGradient -a"></span>
+				<span class="bgCircleGradient -b"></span>
+				<span class="bgCircleGradient -c"></span>
+				<span class="bgCircleGradient -d"></span>
+				<span class="bgCircleGradient -e"></span>
+				<span class="bgCircleGradient -f"></span>
+			</div>
+			<div class="bgCircle -f">
+				<span class="bgCircleGradient -a"></span>
+				<span class="bgCircleGradient -b"></span>
+				<span class="bgCircleGradient -c"></span>
+				<span class="bgCircleGradient -d"></span>
+				<span class="bgCircleGradient -e"></span>
+				<span class="bgCircleGradient -f"></span>
+			</div>
+			<div class="bgCircle -g">
+				<span class="bgCircleGradient -a"></span>
+				<span class="bgCircleGradient -b"></span>
+				<span class="bgCircleGradient -c"></span>
+				<span class="bgCircleGradient -d"></span>
+				<span class="bgCircleGradient -e"></span>
+				<span class="bgCircleGradient -f"></span>
+			</div>
+			<div class="bgDot -a"></div>
+			<div class="bgDot -b"></div>
+			<div class="bgDot -c"></div>
+			<div class="bgDot -d"></div>
+			<div class="bgDot -e"></div>
+			<div class="bgDot -f"></div>
+			<div class="bgLine -b"></div>
+			<div class="bgWhiteBox">
+				<div class="bgWhiteBoxIn"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /#fullWrapIn -->
+<footer class="footer">
+	<div class="footerIn">
+		<div class="s-footerNav">
+			<ul class="s-footerNavLists">
+				<li class="navList">
+					<a href="#top" class="navList__link js-anchor">
+						<span class="navList__link-en">TOP</span>
+						<span class="navList__link-ja">トップ</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="./news/" class="navList__link">
+						<span class="navList__link-en">NEWS</span>
+						<span class="navList__link-ja">ニュース</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="./onair/" class="navList__link">
+						<span class="navList__link-en">ONAIR</span>
+						<span class="navList__link-ja">放送・配信情報</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="#introduction" class="navList__link js-anchor">
+						<span class="navList__link-en">INTRODUCTION</span>
+						<span class="navList__link-ja">イントロダクション</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="./story/" class="navList__link">
+					<span class="navList__link-en">STORY</span>
+					<span class="navList__link-ja">物語</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="#staffcast" class="navList__link js-anchor">
+						<span class="navList__link-en">STAFF&CAST</span>
+						<span class="navList__link-ja">スタッフ＆キャスト</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="./character/" class="navList__link">
+						<span class="navList__link-en">CHARACTER</span>
+						<span class="navList__link-ja">キャラクター</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="./movie/" class="navList__link">
+						<span class="navList__link-en">MOVIE</span>
+						<span class="navList__link-ja">映像</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="./music/" class="navList__link">
+						<span class="navList__link-en">MUSIC</span>
+						<span class="navList__link-ja">音楽情報</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="./goods/" class="navList__link">
+						<span class="navList__link-en">GOODS</span>
+						<span class="navList__link-ja">商品</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="#book" class="navList__link js-anchor">
+						<span class="navList__link-en">BOOK</span>
+						<span class="navList__link-ja">原作</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="./bddvd/" class="navList__link">
+					<span class="navList__link-en">Blu-ray&amp;DVD</span>
+					<span class="navList__link-ja">ブルーレイ&amp;DVD</span>
+					</a>
+				</li>
+				<li class="navList">
+					<a href="./special/" class="navList__link">
+						<span class="navList__link-en">SPECIAL</span>
+						<span class="navList__link-ja">スペシャル</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer_flexCont">
+			<div class="footer_toTop">
+				<a href="#" class="footer_toTop-link js-anchor">
+				<span class="footer_toTop-txt">Page Top</span>
+				<span class="footer_toTop-line"><span></span></span>
+				</a>
+			</div>
+			<dl class="footer_shareLists shareLists">
+				<dt class="shareLists__title">Share</dt>
+				<dd class="shareLists__item is-twitter">
+					<a href="https://twitter.com/intent/tweet?url=https://shiunjifamily.com&text=TVアニメ「紫雲寺家の子供たち」公式サイト&hashtags=紫雲寺家の子供たち,shiunjifamily" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="shareLists__link"><span class="hd">Twitter share</span></a>
+				</dd>
+				<dd class="shareLists__item is-facebook">
+					<a href="https://www.facebook.com/share.php?u=https://shiunjifamily.com" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;" class="shareLists__link"><span class="hd">Facebook share</span></a>
+				</dd>
+				<dd class="shareLists__item is-line">
+					<a href="https://line.me/R/msg/text/?TVアニメ「紫雲寺家の子供たち」公式サイト https://shiunjifamily.com" onclick="window.open(encodeURI(decodeURI(this.href)), 'linewindow', 'width=550, height=520,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" target="_blank" class="shareLists__link"><span class="hd">LINE share</span></a>
+				</dd>
+			</dl>
+			<p class="footer_copyright">&copy;宮島礼吏・白泉社／「紫雲寺家の子供たち」製作委員会</p>
+		</div>
+	</div>
+	<div class="footerBg">
+		<span class="footerBg_acc"></span>
+	</div>
+</footer>
+</div>
+<!-- END #fullWrap -->
+<!-- BEGIN .modalBox -->
+<div class="modalBox js-modalBox" data-lenis-prevent>
+	<div class="closeBtn">
+		<button class="btn_closeBtn js-modalClose">
+			<span class="hd">CLOSE</span>
+			<span class="btn_closeBtn-line"></span>
+			<span class="btn_closeBtn-icon"></span>
+		</button>
+	</div>
+
+	<!-- BEGIN #commentModal -->
+	<div id="commentModal" class="oneModal">
+		<div class="oneModalIn js-oneModalIn">
+			<div class="oneModalIn__cont js-oneModalIn__cont">
+			<div id="commentCont">
+				<div class="commentContIn">
+				<h2 class="commentCont_h2"><img src="./assets/img/common/title/ttl_comment.svg" alt="Comment" /></h2>
+				<div id="js-commentModalCont">
+					<div class="commentCont__detail">
+					<h3 class="commentCont_h3">
+						<span class="commentCont_h3-job"></span>
+						<span class="commentCont_h3-name"></span>
+					</h3>
+					<div class="commentCont_txt"></div>
+					</div>
+					<div class="commentCont__image">
+					<div class="commentCont__imageIn">
+						<img src="" alt="" class="-ndlimg" />
+					</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div><!-- /.oneModalIn -->
+	</div>
+	<!-- END #commentModal -->
+
+	<!-- BEGIN #youtubeModal -->
+	<div id="youtubeModal" class="oneModal">
+		<div class="oneModalIn js-oneModalIn">
+			<div class="youtubeIframeWrap js-oneModalIn__cont">
+				<iframe class="youtubeIframe commonIframe js-youtubeIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div><!-- /.oneModalIn -->
+	</div>
+	<!-- END #youtubeModal -->
+</div>
+<!-- END .modalBox -->
+<script>
+	// VISUALAREA - YtAutoPlayer
+	let _default_ytid = "4XVwQr0t_zU";
+</script>
+<script src="https://unpkg.com/lenis@1.1.8/dist/lenis.min.js"></script>
+<script src="./assets/js/libs/swiper-bundle.min.js"></script>
+<script src="./assets/js/libs/swiper-bundle.min.js"></script>
+<script src="./assets/js/jquery.common.js"></script>
+<script src="./assets/js/jquery.top.js"></script>
+<script src="./assets/js/libs/news.module.js"></script>
+<script src="./_inc/page/comment/staff.comment.js"></script>
+<script src="./_inc/page/comment/cast.comment.js"></script>
+<script src="./assets/js/anipocket-engine.js"></script>
+</body>
 </html>
