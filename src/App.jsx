@@ -12,8 +12,6 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('home');
   const [selectedAnime, setSelectedAnime] = useState(null);
   const [catalogGenre, setCatalogGenre] = useState(null);
-  
-  // Player state: { anime, videos, initialEpisode, initialDubbing }
   const [playerState, setPlayerState] = useState(null);
 
   const handleOpenAnime = (anime) => {
@@ -36,41 +34,42 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative flex flex-col font-sans">
-      {/* Top Header Bar for Home */}
-      {activeTab === 'home' && (
-        <header className="fixed top-0 left-0 right-0 z-30 ios-glass border-b border-white/5 pt-safe">
-          <div className="max-w-md mx-auto px-4 h-12 flex items-center justify-between">
-            <div className="flex items-center gap-2.5">
-              <img 
-                src="/icon.png" 
-                alt="Anipocket" 
-                className="w-7 h-7 rounded-lg shadow-sm border border-white/10" 
-              />
-              <span className="text-base font-bold tracking-tight text-white">
-                Anipocket
+    <div className="min-h-screen bg-[#FAF8FC] text-[#1A1311] relative flex flex-col font-sans">
+      {/* Top Header with Shiunji Vibrancy Glass */}
+      <header className="sticky top-0 left-0 right-0 z-30 liquid-glass-header pt-safe">
+        <div className="max-w-md mx-auto px-4 h-12 flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <img 
+              src="/icon.png" 
+              alt="Anipocket" 
+              className="w-7 h-7 rounded-lg shadow-sm border border-[#8464A5]/20" 
+            />
+            <div className="flex flex-col">
+              <span className="text-sm font-shiunji-title font-bold tracking-widest text-[#705094] uppercase leading-none">
+                ANIPOCKET
+              </span>
+              <span className="text-[9px] text-zinc-400 font-medium tracking-tight">
+                紫雲寺 • SHIUNJI STYLE
               </span>
             </div>
-
-            <button 
-              onClick={() => setActiveTab('catalog')}
-              className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white active:scale-95 transition-transform"
-            >
-              <Search className="w-4 h-4 text-zinc-300" />
-            </button>
           </div>
-        </header>
-      )}
+
+          <button 
+            onClick={() => setActiveTab('catalog')}
+            className="w-8 h-8 rounded-full bg-[#8464A5]/10 flex items-center justify-center text-[#705094] active:scale-95 transition-transform"
+          >
+            <Search className="w-4 h-4" />
+          </button>
+        </div>
+      </header>
 
       {/* Main Tab Content */}
       <main className="flex-1">
         {activeTab === 'home' && (
-          <div className="pt-12">
-            <HomeTab 
-              onSelectAnime={handleOpenAnime} 
-              onPlayEpisode={handlePlayEpisode} 
-            />
-          </div>
+          <HomeTab 
+            onSelectAnime={handleOpenAnime} 
+            onPlayEpisode={handlePlayEpisode} 
+          />
         )}
 
         {activeTab === 'catalog' && (
@@ -93,7 +92,7 @@ export default function App() {
         )}
       </main>
 
-      {/* Bottom Floating iOS Tab Bar */}
+      {/* ✦ Floating Liquid Glass TabBar ✦ */}
       <TabBar activeTab={activeTab} onTabChange={setActiveTab} />
 
       {/* Anime Details Modal */}

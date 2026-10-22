@@ -5,14 +5,12 @@
 :root {
   --sat: env(safe-area-inset-top, 0px);
   --sab: env(safe-area-inset-bottom, 0px);
-  --sal: env(safe-area-inset-left, 0px);
-  --sar: env(safe-area-inset-right, 0px);
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
-  background-color: #000000;
-  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Plus Jakarta Sans", sans-serif;
+  background-color: #FAF8FC;
+  color: #1A1311;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
@@ -30,10 +28,10 @@ body {
 }
 
 .pb-nav {
-  padding-bottom: calc(74px + max(16px, env(safe-area-inset-bottom, 16px)));
+  padding-bottom: calc(90px + max(16px, env(safe-area-inset-bottom, 16px)));
 }
 
-/* Hide scrollbars but keep functionality */
+/* Hide scrollbars */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -42,37 +40,35 @@ body {
   scrollbar-width: none;
 }
 
-/* iOS Glass Effect */
-.ios-glass {
-  background: rgba(18, 18, 20, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-color: rgba(255, 255, 255, 0.08);
+/* ✦ The Apple Liquid Glass formula (Shiunji edition) ✦ */
+.liquid-glass-tabbar {
+  background: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(28px) saturate(190%) contrast(92%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%) contrast(92%);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 
+    0 20px 40px -10px rgba(112, 80, 148, 0.16),
+    0 1px 3px 0 rgba(112, 80, 148, 0.08),
+    inset 0 1.5px 1px 0 rgba(255, 255, 255, 1);
 }
 
-.ios-glass-card {
-  background: rgba(28, 28, 30, 0.65);
+.liquid-glass-header {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(131, 100, 165, 0.12);
+}
+
+.liquid-glass-card {
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(131, 100, 165, 0.12);
+  box-shadow: 0 4px 20px -2px rgba(112, 80, 148, 0.06);
 }
 
-/* Smooth fade in */
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.98); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-/* Modal slide up */
-@keyframes slideUp {
-  from { transform: translateY(100%); }
-  to { transform: translateY(0); }
-}
-
-.animate-slide-up {
-  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+/* Shiunji Editorial Title styling */
+.font-shiunji-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.04em;
 }

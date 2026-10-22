@@ -7,27 +7,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        ios: {
-          bg: "#000000",
-          card: "#121214",
-          cardElevated: "#1c1c1e",
-          border: "#2c2c2e",
-          accent: "#ff375f", // vibrant iOS pink/red accent
-          accentHover: "#ff2d55",
-          primary: "#ff383c", // icon match red
-          gray: "#8e8e93",
-          lightGray: "#d1d1d6",
+        shiunji: {
+          bg: "#FFFFFF",
+          bgSoft: "#FAF8FC",
+          card: "#FFFFFF",
+          cardElevated: "#F8F5FA",
+          border: "rgba(131, 100, 165, 0.12)",
+          borderSoft: "rgba(0, 0, 0, 0.06)",
+          purple: "#8464A5",
+          purpleDark: "#705094",
+          purpleLight: "rgba(132, 100, 165, 0.10)",
+          textDark: "#1A1311",
+          textMuted: "#6B6570",
+          textLight: "#8E8E93",
+          // Character palette from shiunjifamily.com
+          charaArata: "#FCA1A9",
+          charaBanri: "#FCB180",
+          charaSeiha: "#81CEF7",
+          charaOuka: "#F6B6D3",
+          charaMinami: "#A0D5C2",
+          charaKotono: "#FDE03D",
+          charaShion: "#AAB0FF",
         }
       },
       fontFamily: {
-        sans: [
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "SF Pro Display",
-          "SF Pro Text",
-          "Helvetica Neue",
-          "sans-serif"
-        ]
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"Plus Jakarta Sans"', 'sans-serif'],
       }
     },
   },
