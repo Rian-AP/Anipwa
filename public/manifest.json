@@ -1,0 +1,18 @@
+{
+  "name": "Anipocket",
+  "short_name": "Anipocket",
+  "description": "Твой карманный аниме-кинотеатр",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+  <mask id="m"><path d="M0 0H1024V364Q515 390 0 364Z" fill="#fff" stroke="none"/></mask>
+  <g mask="url(#m)" transform="rotate(4 530 280)">
+    <path fill="#000" fill-rule="evenodd" stroke="none" d="M404 169H461V430H404ZM420 186h24v22h-24zM420 228h24v22h-24zM420 270h24v22h-24zM420 312h24v22h-24zM420 354h24v22h-24zM599 169H656V430H599ZM616 186h24v22h-24zM616 228h24v22h-24zM616 270h24v22h-24zM616 312h24v22h-24zM616 354h24v22h-24z"/>
+    <path d="M410 175H650M461 199H599M461 330H599"/>
+    <path stroke-width="8" d="M461 214H599"/>
+  </g>
+  <path d="M385 357H300Q272 357 272 385V680Q272 712 300 728L490 825Q515 837 540 825L727 728Q755 712 755 680V385Q755 357 727 357H665M282 372Q515 398 745 372M272 452L515 505L755 452"/>
+  <path stroke-width="10" stroke-dasharray="20 14" d="M325 415Q512 428 700 413M302 400V442M720 400V442M306 475V680Q306 700 330 712L500 795Q515 802 530 795L695 712Q718 700 718 680V475"/>
+</svg>
